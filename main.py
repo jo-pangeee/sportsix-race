@@ -185,4 +185,4 @@ async def main(page: ft.Page):
 if __name__ == "__main__":
     import os
     port = int(os.getenv("PORT", 8000))
-    ft.run(target=main, port=port, host="0.0.0.0")
+    ft.app(target=main, port=port, host="0.0.0.0") # run을 app으로 변경
